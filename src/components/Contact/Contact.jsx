@@ -12,11 +12,11 @@ function Contact({ contact }) {
       <div className={css.box}>
         <div className={css.item}>
           <FaUser className={css.person} />
-          <p>{name}</p>
+          <p className={css.text}>{name}</p>
         </div>
         <div className={css.item}>
           <FaPhoneAlt className={css.person} />
-          <p>{number}</p>
+          <p className={css.text}>{number}</p>
         </div>
       </div>
       <button

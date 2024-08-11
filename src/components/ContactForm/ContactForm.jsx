@@ -12,7 +12,7 @@ function ContactForm() {
     name: Yup.string()
       .required("This field is required!")
       .min(3, "Name consist from min 3 chars")
-      .max(50, "Name consist from max 20 chars"),
+      .max(50, "Name consist from max 50 chars"),
     number: Yup.string()
       .required("This field is required!")
       .matches(/^\d{3}-\d{2}-\d{2}$/, "This field is required (123-45-67)"),

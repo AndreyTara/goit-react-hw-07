@@ -19,6 +19,11 @@
   align-items: center;
   gap: 10px;
 }
+.text {
+  max-width: 170px;
+  width: 100%;
+  overflow-y: auto;
+}
 .btn {
   font-size: inherit;
   border-radius: 5px;
