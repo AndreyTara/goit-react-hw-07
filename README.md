@@ -1,3 +1,9 @@
+# npm i react-icons
+
+# npm i yup
+
+# npm i formik
+
 # npm install @reduxjs/toolkit react-redux
 
 # React + Vite

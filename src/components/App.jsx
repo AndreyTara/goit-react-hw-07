@@ -1,30 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import initialContacts from "../assets/contacts.json";
 import css from "./App.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { selectCount } from "../redux/start/selectors";
-import { increment } from "../redux/start/slice";
+import ContactForm from "./ContactForm/ContactForm";
+import SearchBox from "./SearchBox/SearchBox";
+import ContactList from "./ContactList/ContactList";
 
 function App() {
-  const [countRea, setCountRea] = useState(0);
-
-  const countRed = useSelector(selectCount);
-  const dispatch = useDispatch();
   return (
-    <>
-      <h1>Vite + React + Redux </h1>
-      <div>
-        <button onClick={() => setCountRea((countRea) => countRea + 1)}>
-          React count is {countRea}
-        </button>
-
-        <button onClick={() => dispatch(increment())}>
-          Redux count is {countRed}
-        </button>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className={css.root}>
+      <h1>Contacts book</h1>
+      <ContactForm />
+      <SearchBox />
+      <ContactList />
+    </div>
   );
 }
 
