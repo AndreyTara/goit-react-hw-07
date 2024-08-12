@@ -9,13 +9,13 @@ import logo from "../assets/redux-logo.svg";
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectError,
-  selectIsLoading,
+  selectLoading,
   selectorContacts,
 } from "../redux/selectors";
 import { fetchContacts } from "../redux/contactsOps";
 function App() {
   const dispatch = useDispatch();
-  const isLoading = useSelector(selectIsLoading);
+  const loading = useSelector(selectLoading);
   const error = useSelector(selectError);
   const contacts = useSelector(selectorContacts);
 
@@ -32,6 +32,7 @@ function App() {
       <Layout>
         <ContactForm />
         <SearchBox />
+        {loading && !error && <b>Request in progress...</b>}
         <ContactList />
       </Layout>
     </div>

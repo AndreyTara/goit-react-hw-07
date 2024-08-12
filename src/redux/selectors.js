@@ -3,7 +3,7 @@ import { createSelector } from "@reduxjs/toolkit";
 // src/redux/selectors.js
 export const selectorContacts = (state) => state.contacts.contacts.items;
 
-export const selectIsLoading = (state) => state.contacts.isLoading;
+export const selectLoading = (state) => state.contacts.loading;
 
 export const selectError = (state) => state.contacts.error;
 
