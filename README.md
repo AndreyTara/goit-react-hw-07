@@ -1,3 +1,7 @@
+# npm i axios
+
+# npm i clsx
+
 # npm i react-icons
 
 # npm i yup

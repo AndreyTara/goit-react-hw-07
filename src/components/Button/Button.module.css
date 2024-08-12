@@ -1,0 +1,29 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  background-color: #e2e5e8;
+  color: inherit;
+  transition: 0.5s ease;
+}
+
+.btn.isSelected {
+  /* background-color: lightgray; */
+  background-color: #838383;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: lightgray;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: darkgrey;
+  color: #fff;
+}
