@@ -5,7 +5,7 @@ import SearchBox from "./SearchBox/SearchBox";
 import ContactList from "./ContactList/ContactList";
 import Layout from "./Layout/Layout";
 import Header from "./Header/Header";
-import logo from "../../public/redux-logo.svg";
+import logo from "../assets/redux-logo.svg";
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectError,
@@ -25,7 +25,6 @@ function App() {
 
   return (
     <div className={css.root}>
-      {console.log(contacts)}
       <Header>
         <img src={logo} alt="logo" width={32} height={32} />
         <h1>Contacts book</h1>

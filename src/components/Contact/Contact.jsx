@@ -19,7 +19,7 @@ function Contact({ contact }) {
           <p className={css.text}>{number}</p>
         </div>
       </div>
-      <Button onClick={() => dispatch(deleteContact(id))}>
+      <Button onClick={() => dispatch(deleteContact(contact.id))}>
         <p className={css.textBtn}>Delete</p>
       </Button>
     </div>
