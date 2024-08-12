@@ -27,7 +27,7 @@ function ContactForm() {
   };
   const handleSubmit = (data, actions) => {
     const createdAt = new Date().toISOString();
-    dispatch(addContact({ ...data, id: nanoid(), createdAt }));
+    dispatch(addContact({ ...data, createdAt }));
     // actions.resetForm();
   };
 
