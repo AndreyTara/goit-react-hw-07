@@ -24,13 +24,7 @@
   width: 100%;
   overflow-y: auto;
 }
-.btn {
-  font-size: inherit;
-  border-radius: 5px;
-  padding: 10px 15px;
-  border: none;
-  transition: 500ms ease;
-  &:hover {
-    background-color: lightgray;
-  }
+
+.textBtn {
+  font-weight: 600;
 }

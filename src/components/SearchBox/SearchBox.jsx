@@ -1,11 +1,12 @@
 import css from "./SearchBox.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectFilter } from "../../redux/contacts/selectors.js";
-import { changeFilter } from "../../redux/contacts/filtersSlice.js";
+import { changeFilter } from "../../redux/contacts/filterSlice.js";
 
 const SearchBox = () => {
   const filter = useSelector(selectFilter);
   const dispatch = useDispatch();
+
   return (
     <div className={css.wrapSearch}>
       <label className={css.label}>
