@@ -11,9 +11,11 @@ function ContactForm() {
 
   const registerSchema = Yup.object({
     name: Yup.string()
+      .trim()
       .required("This field is required!")
       .min(3, "Name consist from min 3 chars")
       .max(50, "Name consist from max 50 chars"),
+
     number: Yup.string()
       .required("This field is required!")
       .matches(/^\d{3}-\d{3}-\d{4}$/, "This field is required (698-340-6567)"),
